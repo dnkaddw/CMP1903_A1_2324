@@ -27,6 +27,7 @@ namespace CMP1903_A1_2324
             int number3 = games.Dice3();
             int output = games.DiceRollResult();
 
+            //Debug.Assert checks whether the Dice rolls and the sum are within the expected range.
             Debug.Assert(number1 > 0 && number1 < 7, "Die 1 out of bounds");
             Debug.Assert(number2 > 0 && number2 < 7, "Die 2 out of bounds");
             Debug.Assert(number3 > 0 && number3 < 7, "Die 3 out of bounds");
