@@ -17,7 +17,13 @@ namespace CMP1903_A1_2324
 
 
         //Method
+        Random rnd = new Random();
 
+        public int Roll()
+        {
+            int randomNumber = rnd.Next(1, 7);
+            return randomNumber;
+        }
 
     }
 }
