@@ -26,7 +26,7 @@ namespace CMP1903_A1_2324
             return die2;
         }
 
-        public int Dice3() //assigns die 3 a random number between 1 and 6 from the Die Class
+        public int Dice3() //assigns die 3 a random number between 1 and 6 from the Die Class   
         {
             die3 = DiceNumber.Roll();
             return die3;
@@ -43,7 +43,7 @@ namespace CMP1903_A1_2324
             Console.WriteLine("Die 1: " + Dice1());
             Console.WriteLine("Die 2: " + Dice2());
             Console.WriteLine("Die 3: " + Dice3());
-            Console.WriteLine("Sum: " + DiceRollResult());
+            Console.WriteLine("Sum of die: " + DiceRollResult());
         }
     }
 }
