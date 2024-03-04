@@ -8,7 +8,7 @@ namespace CMP1903_A1_2324
 {
     internal class Game
     {
-        Die DiceNumber = new Die();
+        Die DiceNumber = new Die(); //allows the functions below to assign the returned value in Die class to the different die objects
         public int die1;
         public int die2;
         public int die3;
