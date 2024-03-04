@@ -10,19 +10,14 @@ namespace CMP1903_A1_2324
     {
         static void Main(string[] args)
         {
-            /*
-             * Create a Game object and call its methods.
-             * Create a Testing object to verify the output and operation of the other classes.
-             */
-
-            while (true)
+            while (true) //allows the dice to keep rolling when the user presses enter
             {
                 Game gme = new Game();
                 Testing testz = new Testing();
 
-                gme.outputting();
+                gme.outputting(); //allows the dice results to show on the screen
 
-                testz.test();
+                testz.test(); //if the numbers on the die are not between 1 and 6, as well as the sum of them not being within the expected range, an error message will be displayed
                 Console.WriteLine();
                 Console.ReadKey();
             }

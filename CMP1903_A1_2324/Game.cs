@@ -14,31 +14,31 @@ namespace CMP1903_A1_2324
         public int die3;
         public int result;
 
-        public int Dice1()
+        public int Dice1() //assigns die 1 the random number between 1 and 6 from the Die Class
         {
             die1 = DiceNumber.Roll();
             return die1;
         }
 
-        public int Dice2()
+        public int Dice2() //assigns die 2 a random number between 1 and 6 from the Die Class
         {
             die2 = DiceNumber.Roll();
             return die2;
         }
 
-        public int Dice3()
+        public int Dice3() //assigns die 3 a random number between 1 and 6 from the Die Class
         {
             die3 = DiceNumber.Roll();
             return die3;
         }
 
-        public int DiceRollResult()
+        public int DiceRollResult() //calculates the rum of the 3 dice
         {
             result = die1 + die2 + die3;
             return result;
         }
 
-        public void outputting()
+        public void outputting() //outputs the random number of each die
         {
             Console.WriteLine("Die 1: " + Dice1());
             Console.WriteLine("Die 2: " + Dice2());
