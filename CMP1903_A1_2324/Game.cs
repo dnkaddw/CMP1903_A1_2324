@@ -9,10 +9,10 @@ namespace CMP1903_A1_2324
     internal class Game
     {
         Die DiceNumber = new Die(); //allows the functions below to assign the returned value in Die class to the different die objects
-        public int die1;
-        public int die2;
-        public int die3;
-        public int result;
+        private int die1;
+        private int die2;
+        private int die3;
+        private int result;
 
         public int Dice1() //assigns die 1 the random number between 1 and 6 from the Die Class
         {
