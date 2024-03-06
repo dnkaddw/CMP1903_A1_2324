@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Dynamic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,10 +11,24 @@ namespace CMP1903_A1_2324
     {
         static void Main(string[] args)
         {
-            /*
-             * Create a Game object and call its methods.
-             * Create a Testing object to verify the output and operation of the other classes.
-             */
+            while (true) //allows the dice to keep rolling when the user presses enter
+            {
+                string quit = "";
+                Game gme = new Game();
+                Testing testz = new Testing();
+
+                gme.outputting(); //allows the dice results to show on the screen
+
+                testz.test(); //if the numbers on the die are not between 1 and 6, as well as the sum of them not being within the expected range, an error message will be displayed
+                Console.WriteLine();
+
+                Console.WriteLine("Enter \'quit\' to quit: ");
+                quit = Console.ReadLine(); 
+                if (quit.ToLower() == "quit")
+                {
+                    break;
+                }
+            }
         }
     }
 }
